@@ -11,7 +11,7 @@
         <!--Item 2-->
         <scene sceneID="exJ-w9-R7O">
             <objects>
-                <viewController id="JqC-fO-7wx" sceneMemberID="viewController">
+                <viewController id="JqC-fO-7wx" customClass="SecondVC" customModule="AnimationApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dW3-SY-GsO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -20,12 +20,10 @@
                                 <rect key="frame" x="174" y="739" width="67" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="startActiviteIndicate:" destination="JqC-fO-7wx" eventType="touchUpInside" id="B0Q-ke-C9g"/>
+                                </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xfg-AZ-1Re">
-                                <rect key="frame" x="87" y="384" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemGray5Color"/>
-                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="auB-Iv-S64"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -38,7 +36,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nlG-DZ-Fje" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52" y="135"/>
+            <point key="canvasLocation" x="85.507246376811594" y="232.36607142857142"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="DgZ-0O-D5C">
@@ -118,9 +116,6 @@
         </systemColor>
         <systemColor name="systemGray3Color">
             <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGray5Color">
-            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

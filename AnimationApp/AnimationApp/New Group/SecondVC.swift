@@ -5,25 +5,27 @@
 //  Created by Illya Gurkov on 27.08.22.
 //
 
+import NVActivityIndicatorView
 import UIKit
 
 class SecondVC: UIViewController {
+    @IBAction func startActiviteIndicate(_ sender: UIButton) {
+        let indicatorType = NVActivityIndicatorType.allCases.randomElement()
+           let loading = NVActivityIndicatorView(frame: .zero, type: indicatorType, color: .blue, padding: 0)
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+           loading.translatesAutoresizingMaskIntoConstraints = false
+           view.addSubview(loading)
+           NSLayoutConstraint.activate([loading.widthAnchor.constraint(equalToConstant: 30),
+                                        loading.heightAnchor.constraint(equalToConstant: 30),
+                                        loading.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+                                        loading.centerYAnchor.constraint(equalTo: view.centerYAnchor)])
 
-        // Do any additional setup after loading the view.
-    }
-    
+           loading.startAnimating()
 
-    /*
-    // MARK: - Navigation
+           DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
+               loading.stopAnimating()
+           }
+       }
+       }
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-}
+        
