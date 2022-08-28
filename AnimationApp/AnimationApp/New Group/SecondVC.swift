@@ -11,21 +11,19 @@ import UIKit
 class SecondVC: UIViewController {
     @IBAction func startActiviteIndicate(_ sender: UIButton) {
         let indicatorType = NVActivityIndicatorType.allCases.randomElement()
-           let loading = NVActivityIndicatorView(frame: .zero, type: indicatorType, color: .blue, padding: 0)
+        let loading = NVActivityIndicatorView(frame: .zero, type: indicatorType, color: .green, padding: 0)
 
-           loading.translatesAutoresizingMaskIntoConstraints = false
-           view.addSubview(loading)
-           NSLayoutConstraint.activate([loading.widthAnchor.constraint(equalToConstant: 30),
-                                        loading.heightAnchor.constraint(equalToConstant: 30),
-                                        loading.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-                                        loading.centerYAnchor.constraint(equalTo: view.centerYAnchor)])
+        loading.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(loading)
+        NSLayoutConstraint.activate([loading.widthAnchor.constraint(equalToConstant: 30),
+                                     loading.heightAnchor.constraint(equalToConstant: 30),
+                                     loading.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+                                     loading.centerYAnchor.constraint(equalTo: view.centerYAnchor)])
 
-           loading.startAnimating()
+        loading.startAnimating()
 
-           DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
-               loading.stopAnimating()
-           }
-       }
-       }
-
-        
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
+            loading.stopAnimating()
+        }
+    }
+}

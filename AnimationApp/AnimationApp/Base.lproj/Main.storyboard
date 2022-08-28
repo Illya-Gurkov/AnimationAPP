@@ -17,9 +17,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOs-Uc-bhb">
-                                <rect key="frame" x="174" y="739" width="67" height="31"/>
+                                <rect key="frame" x="137" y="729" width="141" height="31"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="random animation"/>
                                 <connections>
                                     <action selector="startActiviteIndicate:" destination="JqC-fO-7wx" eventType="touchUpInside" id="B0Q-ke-C9g"/>
                                 </connections>
@@ -28,8 +28,8 @@
                         <viewLayoutGuide key="safeArea" id="auB-Iv-S64"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="dOs-Uc-bhb" firstAttribute="leading" secondItem="auB-Iv-S64" secondAttribute="leading" constant="174" id="TcV-kJ-Rns"/>
-                            <constraint firstItem="dOs-Uc-bhb" firstAttribute="top" secondItem="auB-Iv-S64" secondAttribute="top" constant="695" id="hB2-ta-gUO"/>
+                            <constraint firstItem="dOs-Uc-bhb" firstAttribute="leading" secondItem="auB-Iv-S64" secondAttribute="leading" constant="137" id="TcV-kJ-Rns"/>
+                            <constraint firstItem="dOs-Uc-bhb" firstAttribute="top" secondItem="auB-Iv-S64" secondAttribute="top" constant="685" id="hB2-ta-gUO"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="NK2-yl-64X"/>
